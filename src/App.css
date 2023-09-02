@@ -1,0 +1,524 @@
+/* frontend/src/App.css */
+/* Add the DataTable styles here */
+.addButtonStyle {
+  background-color: "green";
+  color: "white";
+  border: "none";
+  border-radius: "4px";
+  padding: "8px 15px";
+  cursor: "pointer";
+  margin-top: "10px";
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent header wrapping */
+  width: 150px; /* Set a fixed width for headers */
+}
+
+
+
+.DataTableContainer {
+  max-height: 400px; /* Set a maximum height for the table container */
+  overflow: auto; /* Enable scrolling when content exceeds max height */
+}
+
+.FixedHeaderTable {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.FixedHeaderTable thead {
+  position: sticky;
+  top: 0;
+  background-color: #f2f2f2;
+}
+
+.FixedHeaderTable th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent cell content from wrapping */
+  overflow: hidden; /* Hide overflow content */
+  text-align: left;
+}
+
+.ExpandableCell {
+  white-space: pre-line; /* Allow line breaks within cell */
+  word-wrap: break-word; /* Allow long words to wrap */
+  max-height: 200px; /* Set a maximum height for cell */
+  overflow-y: auto; /* Enable vertical scrolling when content exceeds max height */
+  border: 1px solid #ddd; /* Add border for cell */
+  padding: 4px; /* Add padding for cell */
+}
+
+/* Style for the edit icon button */
+.EditButton {
+  color: blue;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Style for the delete icon button */
+.DeleteButton {
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Add this to your CSS file */
+
+/* Add this to your CSS file */
+
+.EditFormOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Add this to your CSS file */
+
+/* Add this to your CSS file */
+
+
+
+.EditForm {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 70%; /* Set to 70% of the screen width */
+  max-width: 400px; /* Limit the maximum width */
+  overflow-y: auto; /* Add scrolling behavior when content exceeds the height */
+  max-height: 70vh; /* Limit the maximum height to 80% of the viewport height */
+}
+
+.EditFormHeader {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.EditFormFields {
+  margin-bottom: 20px;
+}
+
+.FormField {
+  margin-bottom: 15px;
+}
+
+.FormField label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #221a1a;
+}
+
+.FormField input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.ButtonGroup {
+  text-align: center;
+}
+
+.ButtonGroup button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ButtonGroup button:first-child {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+.ButtonGroup button:last-child {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+
+/* app.css */
+
+/* app.css */
+
+/* app.css */
+
+.api-selector-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  /* max-width: 400px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.api-selector-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.api-selector-header h1 {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin: 20px;
+}
+
+.form-field label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.select-button {
+  
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: 16px;
+   /* Push the button to the right */
+}
+
+.select-button:hover {
+  background-color: #0056b3;
+}
+
+.constructed-url {
+  margin-top: -21px;
+  font-size: 14px;
+  padding: 30px;
+  
+
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+
+/* app.css */
+
+/* ... (other styles) */
+
+/* AddNewForm.css */
+
+.add-new-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  position: relative; /* Add this line */
+}
+
+.add-new-form-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* ... (other styles) */
+/* Add this CSS to your stylesheet */
+/* Add this CSS to your stylesheet */
+/* Add this CSS to your stylesheet */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+  flex: 2;
+}
+
+.data-table td button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  color: #333;
+}
+
+.data-table td button:hover {
+  color: #555;
+}
+
+.data-table td button:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+
+/* AddNew.css */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 20px auto;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* DeleteConfirmationModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is above other content */
+}
+
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Other styles as needed */
+/* Add this CSS in your stylesheet */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 1.2rem;
+  color: #333; /* Text color */
+}
+
+.loader:before {
+  content: "";
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #b2a6f7; /* Border color */
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  animation: spin 1s linear infinite; /* Animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.pagination-controls {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-number {
+  margin: 0 10px;
+}
+
+
+
+
+/* Add this CSS class for highlighting */
+.highlighted {
+  background-color: rgb(243, 243, 10);
+  font-weight: bold;
+}
+
+/* CSS */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px; /* Adjust the margin as needed for spacing */
+}
+
+/* If you want to position it to the right of the "REVERSE" button */
+/* .button {
+  margin-right: 10px; 
+} */
+
+/* Optional: Highlight the input when it's focused */
+.search-box input:focus {
+  outline: none;
+  border-color: dodgerblue; /* Change the color to your preference */
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5); /* Optional box-shadow */
+}
+/* CSS */
+.row {
+  padding-top: 10px;
+  gap: 15px;
+  display: flex;
+  align-items: center; /* Vertically align items in the center */
+}
+
+/* .button {
+  margin-right: 10px; 
+} */
+
+.search-box {
+  margin-left: auto; /* Push the search box to the right */
+}
+
+.search-box input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* Additional styles for input if needed */
+}
+
+
+.button-add {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #058024;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-reverse{
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #065569;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
